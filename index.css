@@ -188,7 +188,7 @@ p{
 /*############                  section 3               ###########*/
 
 .content-col{
-    width: 40%;
+    padding: 20px;
 }
 
 .image-col{
@@ -198,13 +198,20 @@ p{
 .tours .image-gallary{
     display: flex;
     flex-wrap: wrap;
-    width:100%;
-    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    
 }
 
 .image-gallary img{
-    max-width: 285px;
-    margin: 8px;
+    
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
 }
 
 .content-col h1{
@@ -213,7 +220,7 @@ p{
 }
 
 .content-col .line{
-    margin-left: -1px;
+    margin-left: 210px;
 }
 
 .content-col p{
@@ -222,7 +229,15 @@ p{
 }
 
 .content-col .ctn{
-    margin-left: -100px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 0;
+    text-decoration: none;
+}
+
+
+.image-gallary  img:hover{
+    transform: scale(1.05);                         
 }
 
 
